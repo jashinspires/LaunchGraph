@@ -1,0 +1,39 @@
+{
+  "timestamp": 1791682200000,
+  "webhookEvent": "jira:issue_updated",
+  "issue_event_type_name": "issue_generic_event",
+  "user": {
+    "self": "https://acme.atlassian.net/rest/api/2/user?accountId=557058:acme-admin",
+    "accountId": "557058:acme-admin",
+    "displayName": "Alex Product Lead",
+    "active": true
+  },
+  "issue": {
+    "id": "10042",
+    "self": "https://acme.atlassian.net/rest/api/2/issue/10042",
+    "key": "PROJ-1024",
+    "fields": {
+      "summary": "Support OAuth 2.0 PKCE authentication flow",
+      "description": "Enterprise customers require PKCE for mobile and SPA authentication security compliance.",
+      "issuetype": {
+        "id": "10001",
+        "name": "Story"
+      },
+      "status": {
+        "id": "10002",
+        "name": "Done",
+        "statusCategory": {
+          "id": 3,
+          "key": "done",
+          "name": "Done"
+        }
+      },
+      "priority": {
+        "id": "2",
+        "name": "High"
+      },
+      "labels": ["security", "auth", "enterprise", "ga"],
+      "epic_key": "PROJ-1000"
+    }
+  }
+}

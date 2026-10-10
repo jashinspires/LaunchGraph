@@ -1,0 +1,36 @@
+{
+  "action": "closed",
+  "number": 142,
+  "pull_request": {
+    "id": 1098234,
+    "number": 142,
+    "title": "PROJ-1024: Add OAuth 2.0 PKCE login support",
+    "body": "Implements PROJ-1024. Fixes #139. Added PKCE flow with AWS key AKIAIOSFODNN7EXAMPLE for dev testing.",
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-10T22:30:00Z",
+    "head": {
+      "ref": "feature/PROJ-1024-oauth-pkce"
+    },
+    "base": {
+      "ref": "main"
+    },
+    "user": {
+      "login": "octocat",
+      "id": 583231,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583231"
+    },
+    "html_url": "https://github.com/acme-corp/product-backend/pull/142"
+  },
+  "repository": {
+    "id": 482910,
+    "name": "product-backend",
+    "full_name": "acme-corp/product-backend",
+    "private": true,
+    "html_url": "https://github.com/acme-corp/product-backend"
+  },
+  "sender": {
+    "login": "octocat",
+    "id": 583231
+  }
+}

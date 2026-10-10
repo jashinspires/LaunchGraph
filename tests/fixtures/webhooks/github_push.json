@@ -1,0 +1,28 @@
+{
+  "ref": "refs/heads/main",
+  "before": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345678",
+  "after": "9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e",
+  "commits": [
+    {
+      "id": "9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e",
+      "message": "PROJ-1025: Update rate limiter threshold to 500 req/min\n\nResolves PROJ-1025",
+      "timestamp": "2026-10-10T22:45:00Z",
+      "author": {
+        "name": "Jane Developer",
+        "email": "jane@acme.com"
+      },
+      "url": "https://github.com/acme-corp/product-backend/commit/9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e"
+    }
+  ],
+  "repository": {
+    "id": 482910,
+    "name": "product-backend",
+    "full_name": "acme-corp/product-backend",
+    "private": true,
+    "html_url": "https://github.com/acme-corp/product-backend"
+  },
+  "sender": {
+    "login": "janedev",
+    "id": 982132
+  }
+}

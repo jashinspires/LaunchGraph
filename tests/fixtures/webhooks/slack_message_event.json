@@ -1,0 +1,17 @@
+{
+  "token": "verification_token_sample",
+  "team_id": "T012AB34CDE",
+  "api_app_id": "A012345678",
+  "event": {
+    "type": "message",
+    "channel": "C01234PROD",
+    "user": "U01234DEV",
+    "text": "Shipped PROJ-1024 OAuth PKCE flow to production in release v2.4.0! :rocket:",
+    "ts": "1791682350.000200",
+    "event_ts": "1791682350.000200",
+    "channel_type": "channel"
+  },
+  "type": "event_callback",
+  "event_id": "Ev0123456789",
+  "event_time": 1791682350
+}
