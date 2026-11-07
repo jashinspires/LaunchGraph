@@ -18,6 +18,7 @@ from launchgraph_core.db.base import Base
 from launchgraph_core.db.models import Workspace, Connection, AppUser
 from services.ingester.main import app as ingester_app
 from services.normalizer.main import app as normalizer_app
+from services.decisioner.main import app as decisioner_app
 
 TEST_DATABASE_URL = "sqlite+aiosqlite:///:memory:"
 
@@ -122,3 +123,19 @@ async def normalizer_client(db_session: AsyncSession) -> AsyncGenerator[AsyncCli
     async with AsyncClient(transport=transport, base_url="http://test") as client:
         yield client
     normalizer_app.dependency_overrides.clear()
+
+
+@pytest_asyncio.fixture
+async def decisioner_client(db_session: AsyncSession) -> AsyncGenerator[AsyncClient, None]:
+    """HTTPX test client for Decisioner service overriding db session dependency."""
+    from launchgraph_core.db.session import get_async_session
+
+    async def override_get_session():
+        yield db_session
+
+    decisioner_app.dependency_overrides[get_async_session] = override_get_session
+    transport = ASGITransport(app=decisioner_app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        yield client
+    decisioner_app.dependency_overrides.clear()
+

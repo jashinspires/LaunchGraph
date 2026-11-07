@@ -42,8 +42,15 @@ class Settings(BaseSettings):
 
     # Webhook Verification Defaults
     GITHUB_WEBHOOK_SECRET: Optional[str] = "test-github-secret"
+    GITHUB_TOKEN: Optional[str] = None
+    GITHUB_REPO: Optional[str] = "jashinspires/LaunchGraph"
     SLACK_SIGNING_SECRET: Optional[str] = "test-slack-secret"
+    SLACK_BOT_TOKEN: Optional[str] = None
+    SLACK_APP_TOKEN: Optional[str] = None
     JIRA_WEBHOOK_SECRET: Optional[str] = "test-jira-secret"
+    JIRA_API_TOKEN: Optional[str] = None
+    JIRA_EMAIL: Optional[str] = None
+    JIRA_DOMAIN: Optional[str] = None
 
     # Worker Settings
     WORKER_POLL_INTERVAL_SECONDS: float = 2.0

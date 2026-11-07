@@ -54,11 +54,21 @@ instance/
 # IDE & Editor settings
 .idea/
 .vscode/
+.obsidian/
 *.swp
 *.swo
 *~
 .DS_Store
 
-# Internal design specifications & planning artifacts
+# Internal design specifications, presentations & binary artifacts
 resources/
 scratch/
+*.pdf
+*.pptx
+
+# Temporary presentation guides and viewer scratchpad
+COLLEGE_PRESENTATION_GUIDE.md
+LaunchGraph V1 - Architecture & Sequential Pipeline Viewer.md
+Untitled.md
+Pasted image *.png
+scripts/generate_50_percent_report_pdf.py
